@@ -1,7 +1,6 @@
 # Kreise im Pricing: wie oft, und was kosten sie? – Streamlit-Demo
 
-<!-- Nach dem Deploy hier direkt den Live-Link einsetzen (Leerzeile davor und danach):
-**[→ Demo live ausprobieren](https://sebastianhanisch-kreise-im-pricing-demo.streamlit.app/)** -->
+**[→ Demo live ausprobieren](https://sebastianhanisch-kreise-im-pricing-demo.streamlit.app/)**
 
 Interaktive **Konzepte-Demo** der Reihe „Ressourcenwege und Spaltenerzeugung“ im Portfolio von [Sebastian Hanisch](https://sebastianhanisch.net) (Operations Research und Machine Learning).
 Im **Pricing** der Spaltenerzeugung sucht das **Label-Setting** die Route mit den kleinsten **reduzierten Kosten** (Weglänge minus die **Dualpreise**, die der Master je Kunde vorgibt). Elementar, also mit jedem Kunden höchstens einmal, ist das aufwendig (jedes Label muss sich alle besuchten Kunden merken);
