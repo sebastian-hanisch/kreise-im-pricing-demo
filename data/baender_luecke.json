@@ -1,0 +1,1256 @@
+{
+ "zellen": [
+  {
+   "id": "elementar_n10_b40",
+   "bezug": "elementar",
+   "n": 10,
+   "breite": 40,
+   "typ": "zufall",
+   "neu_gerechnet": true,
+   "zeilen": [
+    {
+     "n": 10,
+     "breite": 40,
+     "seed": 0,
+     "schranke_k1": 349.04483638920397,
+     "schranke_ref": 349.04483638920397,
+     "labels_k1": 644,
+     "labels_ref": 589,
+     "abgebrochen": false
+    },
+    {
+     "n": 10,
+     "breite": 40,
+     "seed": 1,
+     "schranke_k1": 482.79710257232705,
+     "schranke_ref": 482.79710257232705,
+     "labels_k1": 162,
+     "labels_ref": 217,
+     "abgebrochen": false
+    },
+    {
+     "n": 10,
+     "breite": 40,
+     "seed": 2,
+     "schranke_k1": 416.71670637275395,
+     "schranke_ref": 416.71670637275395,
+     "labels_k1": 281,
+     "labels_ref": 500,
+     "abgebrochen": false
+    },
+    {
+     "n": 10,
+     "breite": 40,
+     "seed": 3,
+     "schranke_k1": 406.8582955048962,
+     "schranke_ref": 406.8582955048962,
+     "labels_k1": 656,
+     "labels_ref": 501,
+     "abgebrochen": false
+    },
+    {
+     "n": 10,
+     "breite": 40,
+     "seed": 4,
+     "schranke_k1": 422.6465692876817,
+     "schranke_ref": 441.75891981649795,
+     "labels_k1": 617,
+     "labels_ref": 874,
+     "abgebrochen": false
+    },
+    {
+     "n": 10,
+     "breite": 40,
+     "seed": 5,
+     "schranke_k1": 522.5384393065509,
+     "schranke_ref": 522.5384393065509,
+     "labels_k1": 333,
+     "labels_ref": 324,
+     "abgebrochen": false
+    }
+   ],
+   "grenze_vergleiche": 600000000,
+   "quelle": "neu gerechnet mit tools/baender_erzeugen.py dieser Demo (Kern kip_algorithm.py, Master HiGHS)",
+   "vormessung": {
+    "datei": "label-setting-planung/vormessung/run_p07_n10.log",
+    "k1": {
+     "verglichen": 6,
+     "abweichend": 0,
+     "nur_neu_fertig": 0,
+     "nur_neu_fertig_seeds": [],
+     "nur_vormessung_fertig": 0
+    },
+    "elementar": {
+     "verglichen": 6,
+     "abweichend": 0,
+     "nur_neu_fertig": 0,
+     "nur_neu_fertig_seeds": [],
+     "nur_vormessung_fertig": 0
+    }
+   }
+  },
+  {
+   "id": "elementar_n10_b100",
+   "bezug": "elementar",
+   "n": 10,
+   "breite": 100,
+   "typ": "zufall",
+   "neu_gerechnet": true,
+   "zeilen": [
+    {
+     "n": 10,
+     "breite": 100,
+     "seed": 0,
+     "schranke_k1": 311.62817368437356,
+     "schranke_ref": 323.13046456274367,
+     "labels_k1": 1386,
+     "labels_ref": 2044,
+     "abgebrochen": false
+    },
+    {
+     "n": 10,
+     "breite": 100,
+     "seed": 1,
+     "schranke_k1": 403.39977777735317,
+     "schranke_ref": 440.1039794001505,
+     "labels_k1": 770,
+     "labels_ref": 1371,
+     "abgebrochen": false
+    },
+    {
+     "n": 10,
+     "breite": 100,
+     "seed": 2,
+     "schranke_k1": 385.18293671430877,
+     "schranke_ref": 391.951121821541,
+     "labels_k1": 948,
+     "labels_ref": 1488,
+     "abgebrochen": false
+    },
+    {
+     "n": 10,
+     "breite": 100,
+     "seed": 3,
+     "schranke_k1": 356.6646979538461,
+     "schranke_ref": 376.10513720403105,
+     "labels_k1": 945,
+     "labels_ref": 747,
+     "abgebrochen": false
+    },
+    {
+     "n": 10,
+     "breite": 100,
+     "seed": 4,
+     "schranke_k1": 375.75123558729103,
+     "schranke_ref": 436.47829068338183,
+     "labels_k1": 1372,
+     "labels_ref": 928,
+     "abgebrochen": false
+    },
+    {
+     "n": 10,
+     "breite": 100,
+     "seed": 5,
+     "schranke_k1": 427.163849721182,
+     "schranke_ref": 427.163849721182,
+     "labels_k1": 1019,
+     "labels_ref": 1608,
+     "abgebrochen": false
+    }
+   ],
+   "grenze_vergleiche": 600000000,
+   "quelle": "neu gerechnet mit tools/baender_erzeugen.py dieser Demo (Kern kip_algorithm.py, Master HiGHS)",
+   "vormessung": {
+    "datei": "label-setting-planung/vormessung/run_p07_n10.log",
+    "k1": {
+     "verglichen": 6,
+     "abweichend": 0,
+     "nur_neu_fertig": 0,
+     "nur_neu_fertig_seeds": [],
+     "nur_vormessung_fertig": 0
+    },
+    "elementar": {
+     "verglichen": 6,
+     "abweichend": 0,
+     "nur_neu_fertig": 0,
+     "nur_neu_fertig_seeds": [],
+     "nur_vormessung_fertig": 0
+    }
+   }
+  },
+  {
+   "id": "elementar_n15_b40",
+   "bezug": "elementar",
+   "n": 15,
+   "breite": 40,
+   "typ": "zufall",
+   "neu_gerechnet": true,
+   "zeilen": [
+    {
+     "n": 15,
+     "breite": 40,
+     "seed": 0,
+     "schranke_k1": 500.0582784309091,
+     "schranke_ref": 503.27811218008674,
+     "labels_k1": 2901,
+     "labels_ref": 2816,
+     "abgebrochen": false
+    },
+    {
+     "n": 15,
+     "breite": 40,
+     "seed": 1,
+     "schranke_k1": 588.7635258379314,
+     "schranke_ref": 588.7635258379314,
+     "labels_k1": 992,
+     "labels_ref": 1464,
+     "abgebrochen": false
+    },
+    {
+     "n": 15,
+     "breite": 40,
+     "seed": 2,
+     "schranke_k1": 569.3147042303592,
+     "schranke_ref": 571.3061633735355,
+     "labels_k1": 1262,
+     "labels_ref": 1669,
+     "abgebrochen": false
+    },
+    {
+     "n": 15,
+     "breite": 40,
+     "seed": 3,
+     "schranke_k1": 536.2880944123058,
+     "schranke_ref": 551.2102041205658,
+     "labels_k1": 1333,
+     "labels_ref": 3334,
+     "abgebrochen": false
+    },
+    {
+     "n": 15,
+     "breite": 40,
+     "seed": 4,
+     "schranke_k1": 571.2177558114254,
+     "schranke_ref": 571.2177558114253,
+     "labels_k1": 1255,
+     "labels_ref": 1446,
+     "abgebrochen": false
+    },
+    {
+     "n": 15,
+     "breite": 40,
+     "seed": 5,
+     "schranke_k1": 559.9272951733332,
+     "schranke_ref": 559.9272951733332,
+     "labels_k1": 970,
+     "labels_ref": 943,
+     "abgebrochen": false
+    }
+   ],
+   "grenze_vergleiche": 600000000,
+   "quelle": "neu gerechnet mit tools/baender_erzeugen.py dieser Demo (Kern kip_algorithm.py, Master HiGHS)",
+   "vormessung": {
+    "datei": "label-setting-planung/vormessung/run_p07_n15.log",
+    "k1": {
+     "verglichen": 6,
+     "abweichend": 0,
+     "nur_neu_fertig": 0,
+     "nur_neu_fertig_seeds": [],
+     "nur_vormessung_fertig": 0
+    },
+    "elementar": {
+     "verglichen": 6,
+     "abweichend": 0,
+     "nur_neu_fertig": 0,
+     "nur_neu_fertig_seeds": [],
+     "nur_vormessung_fertig": 0
+    }
+   }
+  },
+  {
+   "id": "elementar_n15_b100",
+   "bezug": "elementar",
+   "n": 15,
+   "breite": 100,
+   "typ": "zufall",
+   "neu_gerechnet": true,
+   "zeilen": [
+    {
+     "n": 15,
+     "breite": 100,
+     "seed": 0,
+     "schranke_k1": 411.46263463952954,
+     "schranke_ref": 440.8836490487487,
+     "labels_k1": 5189,
+     "labels_ref": 8166,
+     "abgebrochen": false
+    },
+    {
+     "n": 15,
+     "breite": 100,
+     "seed": 1,
+     "schranke_k1": 523.8218625209054,
+     "schranke_ref": 534.2250535138492,
+     "labels_k1": 4050,
+     "labels_ref": 5113,
+     "abgebrochen": false
+    },
+    {
+     "n": 15,
+     "breite": 100,
+     "seed": 2,
+     "schranke_k1": 468.1596908498101,
+     "schranke_ref": 497.8878097059661,
+     "labels_k1": 4231,
+     "labels_ref": 8208,
+     "abgebrochen": false
+    },
+    {
+     "n": 15,
+     "breite": 100,
+     "seed": 3,
+     "schranke_k1": 449.09619172742447,
+     "schranke_ref": 460.5047376939332,
+     "labels_k1": 5529,
+     "labels_ref": 11971,
+     "abgebrochen": false
+    },
+    {
+     "n": 15,
+     "breite": 100,
+     "seed": 4,
+     "schranke_k1": 488.85425341732434,
+     "schranke_ref": 525.036564186584,
+     "labels_k1": 4668,
+     "labels_ref": 7478,
+     "abgebrochen": false
+    },
+    {
+     "n": 15,
+     "breite": 100,
+     "seed": 5,
+     "schranke_k1": 481.76993883477405,
+     "schranke_ref": 495.9217514094572,
+     "labels_k1": 5784,
+     "labels_ref": 8112,
+     "abgebrochen": false
+    }
+   ],
+   "grenze_vergleiche": 600000000,
+   "quelle": "neu gerechnet mit tools/baender_erzeugen.py dieser Demo (Kern kip_algorithm.py, Master HiGHS)",
+   "vormessung": {
+    "datei": "label-setting-planung/vormessung/run_p07_n15.log",
+    "k1": {
+     "verglichen": 6,
+     "abweichend": 0,
+     "nur_neu_fertig": 0,
+     "nur_neu_fertig_seeds": [],
+     "nur_vormessung_fertig": 0
+    },
+    "elementar": {
+     "verglichen": 6,
+     "abweichend": 0,
+     "nur_neu_fertig": 0,
+     "nur_neu_fertig_seeds": [],
+     "nur_vormessung_fertig": 0
+    }
+   }
+  },
+  {
+   "id": "elementar_n20_b40",
+   "bezug": "elementar",
+   "n": 20,
+   "breite": 40,
+   "typ": "zufall",
+   "neu_gerechnet": true,
+   "zeilen": [
+    {
+     "n": 20,
+     "breite": 40,
+     "seed": 0,
+     "schranke_k1": 546.2506831242567,
+     "schranke_ref": 546.2506831242567,
+     "labels_k1": 9232,
+     "labels_ref": 20864,
+     "abgebrochen": false
+    },
+    {
+     "n": 20,
+     "breite": 40,
+     "seed": 1,
+     "schranke_k1": 721.353430505691,
+     "schranke_ref": 721.3534305056909,
+     "labels_k1": 3366,
+     "labels_ref": 3821,
+     "abgebrochen": false
+    },
+    {
+     "n": 20,
+     "breite": 40,
+     "seed": 2,
+     "schranke_k1": 644.6981129043364,
+     "schranke_ref": 661.646385175536,
+     "labels_k1": 4597,
+     "labels_ref": 4298,
+     "abgebrochen": false
+    },
+    {
+     "n": 20,
+     "breite": 40,
+     "seed": 3,
+     "schranke_k1": 707.8986566280039,
+     "schranke_ref": 707.8986566280032,
+     "labels_k1": 3797,
+     "labels_ref": 6212,
+     "abgebrochen": false
+    },
+    {
+     "n": 20,
+     "breite": 40,
+     "seed": 4,
+     "schranke_k1": 636.7431218306873,
+     "schranke_ref": 639.9209965303661,
+     "labels_k1": 3384,
+     "labels_ref": 6713,
+     "abgebrochen": false
+    },
+    {
+     "n": 20,
+     "breite": 40,
+     "seed": 5,
+     "schranke_k1": 756.2022738574099,
+     "schranke_ref": 756.20227385741,
+     "labels_k1": 4651,
+     "labels_ref": 3159,
+     "abgebrochen": false
+    }
+   ],
+   "grenze_vergleiche": 600000000,
+   "quelle": "neu gerechnet mit tools/baender_erzeugen.py dieser Demo (Kern kip_algorithm.py, Master HiGHS)",
+   "vormessung": {
+    "datei": "label-setting-planung/vormessung/run_p07_n20.log",
+    "k1": {
+     "verglichen": 6,
+     "abweichend": 0,
+     "nur_neu_fertig": 0,
+     "nur_neu_fertig_seeds": [],
+     "nur_vormessung_fertig": 0
+    },
+    "elementar": {
+     "verglichen": 6,
+     "abweichend": 0,
+     "nur_neu_fertig": 0,
+     "nur_neu_fertig_seeds": [],
+     "nur_vormessung_fertig": 0
+    }
+   }
+  },
+  {
+   "id": "elementar_n20_b100",
+   "bezug": "elementar",
+   "n": 20,
+   "breite": 100,
+   "typ": "zufall",
+   "neu_gerechnet": true,
+   "zeilen": [
+    {
+     "n": 20,
+     "breite": 100,
+     "seed": 0,
+     "schranke_k1": 462.1411192964496,
+     "schranke_ref": 492.2103185556096,
+     "labels_k1": 23190,
+     "labels_ref": 72963,
+     "abgebrochen": false
+    },
+    {
+     "n": 20,
+     "breite": 100,
+     "seed": 1,
+     "schranke_k1": 644.6324760143436,
+     "schranke_ref": 659.8656389262537,
+     "labels_k1": 10053,
+     "labels_ref": 20517,
+     "abgebrochen": false
+    },
+    {
+     "n": 20,
+     "breite": 100,
+     "seed": 2,
+     "schranke_k1": 599.4069728709079,
+     "schranke_ref": 647.3415001206146,
+     "labels_k1": 8143,
+     "labels_ref": 13430,
+     "abgebrochen": false
+    },
+    {
+     "n": 20,
+     "breite": 100,
+     "seed": 3,
+     "schranke_k1": 686.3130895733539,
+     "schranke_ref": 694.5283391653207,
+     "labels_k1": 7918,
+     "labels_ref": 9503,
+     "abgebrochen": false
+    },
+    {
+     "n": 20,
+     "breite": 100,
+     "seed": 4,
+     "schranke_k1": 586.2946329309342,
+     "schranke_ref": 622.4228551280138,
+     "labels_k1": 14775,
+     "labels_ref": 32675,
+     "abgebrochen": false
+    },
+    {
+     "n": 20,
+     "breite": 100,
+     "seed": 5,
+     "schranke_k1": 626.2066399023855,
+     "schranke_ref": 650.4691880970987,
+     "labels_k1": 12810,
+     "labels_ref": 22775,
+     "abgebrochen": false
+    }
+   ],
+   "grenze_vergleiche": 600000000,
+   "quelle": "neu gerechnet mit tools/baender_erzeugen.py dieser Demo (Kern kip_algorithm.py, Master HiGHS)",
+   "vormessung": {
+    "datei": "label-setting-planung/vormessung/run_p07_n20.log",
+    "k1": {
+     "verglichen": 6,
+     "abweichend": 0,
+     "nur_neu_fertig": 0,
+     "nur_neu_fertig_seeds": [],
+     "nur_vormessung_fertig": 0
+    },
+    "elementar": {
+     "verglichen": 6,
+     "abweichend": 0,
+     "nur_neu_fertig": 0,
+     "nur_neu_fertig_seeds": [],
+     "nur_vormessung_fertig": 0
+    }
+   }
+  },
+  {
+   "id": "elementar_n25_b40",
+   "bezug": "elementar",
+   "n": 25,
+   "breite": 40,
+   "typ": "zufall",
+   "neu_gerechnet": true,
+   "zeilen": [
+    {
+     "n": 25,
+     "breite": 40,
+     "seed": 0,
+     "schranke_k1": 748.1713944551811,
+     "schranke_ref": 754.067418403574,
+     "labels_k1": 11426,
+     "labels_ref": 15761,
+     "abgebrochen": false
+    },
+    {
+     "n": 25,
+     "breite": 40,
+     "seed": 1,
+     "schranke_k1": 861.7477390380112,
+     "schranke_ref": 868.1306102244046,
+     "labels_k1": 8660,
+     "labels_ref": 14448,
+     "abgebrochen": false
+    },
+    {
+     "n": 25,
+     "breite": 40,
+     "seed": 2,
+     "schranke_k1": 834.4426399630979,
+     "schranke_ref": 838.4246961432991,
+     "labels_k1": 8019,
+     "labels_ref": 11513,
+     "abgebrochen": false
+    },
+    {
+     "n": 25,
+     "breite": 40,
+     "seed": 3,
+     "schranke_k1": 744.5005575616455,
+     "schranke_ref": 755.6116590063401,
+     "labels_k1": 9925,
+     "labels_ref": 19196,
+     "abgebrochen": false
+    },
+    {
+     "n": 25,
+     "breite": 40,
+     "seed": 4,
+     "schranke_k1": 798.3516472674153,
+     "schranke_ref": 804.4052026666618,
+     "labels_k1": 8601,
+     "labels_ref": 15889,
+     "abgebrochen": false
+    },
+    {
+     "n": 25,
+     "breite": 40,
+     "seed": 5,
+     "schranke_k1": 872.4387227150547,
+     "schranke_ref": 874.2707606967329,
+     "labels_k1": 6936,
+     "labels_ref": 8351,
+     "abgebrochen": false
+    }
+   ],
+   "grenze_vergleiche": 600000000,
+   "quelle": "neu gerechnet mit tools/baender_erzeugen.py dieser Demo (Kern kip_algorithm.py, Master HiGHS)",
+   "vormessung": {
+    "datei": "label-setting-planung/vormessung/run_p07_n25.log",
+    "k1": {
+     "verglichen": 6,
+     "abweichend": 0,
+     "nur_neu_fertig": 0,
+     "nur_neu_fertig_seeds": [],
+     "nur_vormessung_fertig": 0
+    },
+    "elementar": {
+     "verglichen": 6,
+     "abweichend": 0,
+     "nur_neu_fertig": 0,
+     "nur_neu_fertig_seeds": [],
+     "nur_vormessung_fertig": 0
+    }
+   }
+  },
+  {
+   "id": "elementar_n25_b100",
+   "bezug": "elementar",
+   "n": 25,
+   "breite": 100,
+   "typ": "zufall",
+   "neu_gerechnet": true,
+   "zeilen": [
+    {
+     "n": 25,
+     "breite": 100,
+     "seed": 0,
+     "schranke_k1": 697.8461176607876,
+     "schranke_ref": 730.0025917943418,
+     "labels_k1": 43306,
+     "labels_ref": 67469,
+     "abgebrochen": false
+    },
+    {
+     "n": 25,
+     "breite": 100,
+     "seed": 1,
+     "schranke_k1": 788.5369323749807,
+     "schranke_ref": 817.3975192276188,
+     "labels_k1": 25630,
+     "labels_ref": 57938,
+     "abgebrochen": false
+    },
+    {
+     "n": 25,
+     "breite": 100,
+     "seed": 2,
+     "schranke_k1": 770.2896958183402,
+     "schranke_ref": 790.5670142078778,
+     "labels_k1": 17434,
+     "labels_ref": 45269,
+     "abgebrochen": false
+    },
+    {
+     "n": 25,
+     "breite": 100,
+     "seed": 3,
+     "schranke_k1": 694.5097066249504,
+     "schranke_ref": 725.9542111009694,
+     "labels_k1": 28697,
+     "labels_ref": 55816,
+     "abgebrochen": false
+    },
+    {
+     "n": 25,
+     "breite": 100,
+     "seed": 4,
+     "schranke_k1": 743.2608978700142,
+     "schranke_ref": 778.8541684212742,
+     "labels_k1": 20555,
+     "labels_ref": 45853,
+     "abgebrochen": false
+    },
+    {
+     "n": 25,
+     "breite": 100,
+     "seed": 5,
+     "schranke_k1": 713.1451049249757,
+     "schranke_ref": 746.7263321875375,
+     "labels_k1": 32299,
+     "labels_ref": 65068,
+     "abgebrochen": false
+    }
+   ],
+   "grenze_vergleiche": 600000000,
+   "quelle": "neu gerechnet mit tools/baender_erzeugen.py dieser Demo (Kern kip_algorithm.py, Master HiGHS)",
+   "vormessung": {
+    "datei": "label-setting-planung/vormessung/run_p07_n25.log",
+    "k1": {
+     "verglichen": 6,
+     "abweichend": 0,
+     "nur_neu_fertig": 0,
+     "nur_neu_fertig_seeds": [],
+     "nur_vormessung_fertig": 0
+    },
+    "elementar": {
+     "verglichen": 6,
+     "abweichend": 0,
+     "nur_neu_fertig": 0,
+     "nur_neu_fertig_seeds": [],
+     "nur_vormessung_fertig": 0
+    }
+   }
+  },
+  {
+   "id": "elementar_n30_b40",
+   "bezug": "elementar",
+   "n": 30,
+   "breite": 40,
+   "typ": "zufall",
+   "neu_gerechnet": true,
+   "zeilen": [
+    {
+     "n": 30,
+     "breite": 40,
+     "seed": 0,
+     "schranke_k1": 856.3526020813379,
+     "schranke_ref": 862.5837258362517,
+     "labels_k1": 13224,
+     "labels_ref": 24970,
+     "abgebrochen": false
+    },
+    {
+     "n": 30,
+     "breite": 40,
+     "seed": 1,
+     "schranke_k1": 944.8315047069318,
+     "schranke_ref": 944.8315047069317,
+     "labels_k1": 14747,
+     "labels_ref": 26724,
+     "abgebrochen": false
+    },
+    {
+     "n": 30,
+     "breite": 40,
+     "seed": 2,
+     "schranke_k1": 878.9064951764744,
+     "schranke_ref": 881.6103719258745,
+     "labels_k1": 24248,
+     "labels_ref": 62838,
+     "abgebrochen": false
+    },
+    {
+     "n": 30,
+     "breite": 40,
+     "seed": 3,
+     "schranke_k1": 909.9232037528292,
+     "schranke_ref": 911.480906657548,
+     "labels_k1": 27482,
+     "labels_ref": 53095,
+     "abgebrochen": false
+    },
+    {
+     "n": 30,
+     "breite": 40,
+     "seed": 4,
+     "schranke_k1": 893.394510848583,
+     "schranke_ref": 893.3945108485827,
+     "labels_k1": 19130,
+     "labels_ref": 51955,
+     "abgebrochen": false
+    },
+    {
+     "n": 30,
+     "breite": 40,
+     "seed": 5,
+     "schranke_k1": 981.4130456150393,
+     "schranke_ref": 983.7944183972818,
+     "labels_k1": 12211,
+     "labels_ref": 28395,
+     "abgebrochen": false
+    }
+   ],
+   "grenze_vergleiche": 600000000,
+   "quelle": "neu gerechnet mit tools/baender_erzeugen.py dieser Demo (Kern kip_algorithm.py, Master HiGHS)",
+   "vormessung": {
+    "datei": "label-setting-planung/vormessung/out_v1_n30.txt",
+    "k1": {
+     "verglichen": 6,
+     "abweichend": 0,
+     "nur_neu_fertig": 0,
+     "nur_neu_fertig_seeds": [],
+     "nur_vormessung_fertig": 0
+    },
+    "elementar": {
+     "verglichen": 6,
+     "abweichend": 0,
+     "nur_neu_fertig": 0,
+     "nur_neu_fertig_seeds": [],
+     "nur_vormessung_fertig": 0
+    }
+   }
+  },
+  {
+   "id": "elementar_n30_b100",
+   "bezug": "elementar",
+   "n": 30,
+   "breite": 100,
+   "typ": "zufall",
+   "neu_gerechnet": true,
+   "zeilen": [
+    {
+     "n": 30,
+     "breite": 100,
+     "seed": 0,
+     "schranke_k1": 756.1214348099188,
+     "schranke_ref": 811.3095380693494,
+     "labels_k1": 52481,
+     "labels_ref": 160888,
+     "abgebrochen": false
+    },
+    {
+     "n": 30,
+     "breite": 100,
+     "seed": 1,
+     "schranke_k1": 822.3697191035892,
+     "schranke_ref": 869.8012486014718,
+     "labels_k1": 44946,
+     "labels_ref": 140285,
+     "abgebrochen": false
+    },
+    {
+     "n": 30,
+     "breite": 100,
+     "seed": 2,
+     "schranke_k1": 847.1220313120829,
+     "schranke_ref": 869.1650020465272,
+     "labels_k1": 54898,
+     "labels_ref": 213026,
+     "abgebrochen": false
+    },
+    {
+     "n": 30,
+     "breite": 100,
+     "seed": 3,
+     "schranke_k1": 833.4832194922174,
+     "schranke_ref": 849.2463661817883,
+     "labels_k1": 68349,
+     "labels_ref": 215593,
+     "abgebrochen": false
+    },
+    {
+     "n": 30,
+     "breite": 100,
+     "seed": 4,
+     "schranke_k1": 777.2174367704656,
+     "schranke_ref": 786.2825564893916,
+     "labels_k1": 69898,
+     "labels_ref": 276550,
+     "abgebrochen": false
+    },
+    {
+     "n": 30,
+     "breite": 100,
+     "seed": 5,
+     "schranke_k1": 880.1761316167251,
+     "schranke_ref": 900.0443683736321,
+     "labels_k1": 59761,
+     "labels_ref": 130368,
+     "abgebrochen": false
+    }
+   ],
+   "grenze_vergleiche": 600000000,
+   "quelle": "neu gerechnet mit tools/baender_erzeugen.py dieser Demo (Kern kip_algorithm.py, Master HiGHS)",
+   "vormessung": {
+    "datei": "label-setting-planung/vormessung/out_v1_n30.txt",
+    "k1": {
+     "verglichen": 6,
+     "abweichend": 0,
+     "nur_neu_fertig": 0,
+     "nur_neu_fertig_seeds": [],
+     "nur_vormessung_fertig": 0
+    },
+    "elementar": {
+     "verglichen": 3,
+     "abweichend": 0,
+     "nur_neu_fertig": 3,
+     "nur_neu_fertig_seeds": [
+      2,
+      3,
+      4
+     ],
+     "nur_vormessung_fertig": 0
+    }
+   }
+  },
+  {
+   "id": "k8_zufall",
+   "bezug": "k = 8",
+   "n": 30,
+   "breite": 100,
+   "typ": "zufall",
+   "neu_gerechnet": true,
+   "zeilen": [
+    {
+     "typ": "zufall",
+     "seed": 0,
+     "schranke_k1": 756.1214348099188,
+     "schranke_ref": 811.3095380693494,
+     "labels_k1": 52481,
+     "labels_ref": 90037,
+     "abgebrochen": false
+    },
+    {
+     "typ": "zufall",
+     "seed": 1,
+     "schranke_k1": 822.3697191035892,
+     "schranke_ref": 869.8012486014718,
+     "labels_k1": 44946,
+     "labels_ref": 102298,
+     "abgebrochen": false
+    },
+    {
+     "typ": "zufall",
+     "seed": 2,
+     "schranke_k1": 847.1220313120829,
+     "schranke_ref": 869.165002046527,
+     "labels_k1": 54898,
+     "labels_ref": 104742,
+     "abgebrochen": false
+    },
+    {
+     "typ": "zufall",
+     "seed": 3,
+     "schranke_k1": 833.4832194922174,
+     "schranke_ref": 849.2463661817883,
+     "labels_k1": 68349,
+     "labels_ref": 150946,
+     "abgebrochen": false
+    },
+    {
+     "typ": "zufall",
+     "seed": 4,
+     "schranke_k1": 777.2174367704656,
+     "schranke_ref": 786.2825564893916,
+     "labels_k1": 69898,
+     "labels_ref": 111635,
+     "abgebrochen": false
+    }
+   ],
+   "quelle": "neu gerechnet mit tools/baender_erzeugen.py dieser Demo (Kern kip_algorithm.py, Master HiGHS)",
+   "vormessung": {
+    "datei": "label-setting-planung/vormessung/out_v7_zufall.txt",
+    "k1_und_k8": {
+     "verglichen": 10,
+     "abweichend": 0,
+     "nur_neu_fertig": 0,
+     "nur_neu_fertig_seeds": [],
+     "nur_vormessung_fertig": 0
+    }
+   }
+  },
+  {
+   "id": "k8_cluster",
+   "bezug": "k = 8",
+   "n": 30,
+   "breite": 100,
+   "typ": "cluster",
+   "neu_gerechnet": true,
+   "zeilen": [
+    {
+     "typ": "cluster",
+     "seed": 0,
+     "schranke_k1": 359.2346109712865,
+     "schranke_ref": 377.4649133619541,
+     "labels_k1": 108725,
+     "labels_ref": 254029,
+     "abgebrochen": false
+    },
+    {
+     "typ": "cluster",
+     "seed": 1,
+     "schranke_k1": 659.7623785680474,
+     "schranke_ref": 678.1291990257981,
+     "labels_k1": 49078,
+     "labels_ref": 128327,
+     "abgebrochen": false
+    },
+    {
+     "typ": "cluster",
+     "seed": 2,
+     "schranke_k1": 413.3604157106184,
+     "schranke_ref": 431.95580627804316,
+     "labels_k1": 305098,
+     "labels_ref": 1101093,
+     "abgebrochen": false
+    },
+    {
+     "typ": "cluster",
+     "seed": 3,
+     "schranke_k1": 556.6016736013306,
+     "schranke_ref": 573.0278343716034,
+     "labels_k1": 91591,
+     "labels_ref": 176711,
+     "abgebrochen": false
+    },
+    {
+     "typ": "cluster",
+     "seed": 4,
+     "schranke_k1": 494.9174632891144,
+     "schranke_ref": 532.8489379110981,
+     "labels_k1": 173708,
+     "labels_ref": 371208,
+     "abgebrochen": false
+    }
+   ],
+   "quelle": "neu gerechnet mit tools/baender_erzeugen.py dieser Demo (Kern kip_algorithm.py, Master HiGHS)",
+   "vormessung": {
+    "datei": "label-setting-planung/vormessung/out_v7_cluster.txt",
+    "k1_und_k8": {
+     "verglichen": 10,
+     "abweichend": 0,
+     "nur_neu_fertig": 0,
+     "nur_neu_fertig_seeds": [],
+     "nur_vormessung_fertig": 0
+    }
+   }
+  },
+  {
+   "id": "k8_lang",
+   "bezug": "k = 8",
+   "n": 30,
+   "breite": 60,
+   "typ": "lang",
+   "neu_gerechnet": true,
+   "zeilen": [
+    {
+     "typ": "lang",
+     "seed": 0,
+     "schranke_k1": 739.6247664855861,
+     "schranke_ref": 750.8606666788222,
+     "labels_k1": 74106,
+     "labels_ref": 95128,
+     "abgebrochen": false
+    },
+    {
+     "typ": "lang",
+     "seed": 1,
+     "schranke_k1": 817.8930901785592,
+     "schranke_ref": 825.5365097263953,
+     "labels_k1": 62387,
+     "labels_ref": 122399,
+     "abgebrochen": false
+    },
+    {
+     "typ": "lang",
+     "seed": 2,
+     "schranke_k1": 683.0559397013005,
+     "schranke_ref": 724.4023396680856,
+     "labels_k1": 78493,
+     "labels_ref": 161984,
+     "abgebrochen": false
+    },
+    {
+     "typ": "lang",
+     "seed": 3,
+     "schranke_k1": 769.5985433179832,
+     "schranke_ref": 793.9089294092915,
+     "labels_k1": 66893,
+     "labels_ref": 126304,
+     "abgebrochen": false
+    },
+    {
+     "typ": "lang",
+     "seed": 4,
+     "schranke_k1": 809.2455231663823,
+     "schranke_ref": 809.2455231663824,
+     "labels_k1": 71215,
+     "labels_ref": 138118,
+     "abgebrochen": false
+    }
+   ],
+   "quelle": "neu gerechnet mit tools/baender_erzeugen.py dieser Demo (Kern kip_algorithm.py, Master HiGHS)",
+   "vormessung": {
+    "datei": "label-setting-planung/vormessung/out_v7_lang.txt",
+    "k1_und_k8": {
+     "verglichen": 10,
+     "abweichend": 0,
+     "nur_neu_fertig": 0,
+     "nur_neu_fertig_seeds": [],
+     "nur_vormessung_fertig": 0
+    }
+   }
+  },
+  {
+   "id": "k16_cluster_n50_b40",
+   "bezug": "k = 16",
+   "neu_gerechnet": false,
+   "zusammenfassung": {
+    "typ": "cluster",
+    "n": 50,
+    "breite": 40,
+    "instanzen": 12,
+    "luecke_mittel": 0.845,
+    "luecke_max": 2.378,
+    "luecke_null_in": 0,
+    "labels_median_k1": 235344,
+    "labels_median_k16": 617478
+   },
+   "n": 50,
+   "breite": 40,
+   "typ": "cluster",
+   "quelle": "label-setting-planung/vormessung/out_v8_auswertung.txt (nicht neu gerechnet)"
+  },
+  {
+   "id": "k16_cluster_n50_b100",
+   "bezug": "k = 16",
+   "neu_gerechnet": false,
+   "zusammenfassung": {
+    "typ": "cluster",
+    "n": 50,
+    "breite": 100,
+    "instanzen": 12,
+    "luecke_mittel": 2.518,
+    "luecke_max": 3.651,
+    "luecke_null_in": 0,
+    "labels_median_k1": 671226,
+    "labels_median_k16": 2729478
+   },
+   "n": 50,
+   "breite": 100,
+   "typ": "cluster",
+   "quelle": "label-setting-planung/vormessung/out_v8_auswertung.txt (nicht neu gerechnet)"
+  },
+  {
+   "id": "k16_cluster_n100_b20",
+   "bezug": "k = 16",
+   "neu_gerechnet": false,
+   "zusammenfassung": {
+    "typ": "cluster",
+    "n": 100,
+    "breite": 20,
+    "instanzen": 12,
+    "luecke_mittel": 0.0,
+    "luecke_max": 0.0,
+    "luecke_null_in": 12,
+    "labels_median_k1": 1826035,
+    "labels_median_k16": 4509430
+   },
+   "n": 100,
+   "breite": 20,
+   "typ": "cluster",
+   "quelle": "label-setting-planung/vormessung/out_v8_auswertung.txt (nicht neu gerechnet)"
+  },
+  {
+   "id": "k16_cluster_n100_b40",
+   "bezug": "k = 16",
+   "neu_gerechnet": false,
+   "zusammenfassung": {
+    "typ": "cluster",
+    "n": 100,
+    "breite": 40,
+    "instanzen": 12,
+    "luecke_mittel": 0.762,
+    "luecke_max": 1.405,
+    "luecke_null_in": 0,
+    "labels_median_k1": 3258147,
+    "labels_median_k16": 9215368
+   },
+   "n": 100,
+   "breite": 40,
+   "typ": "cluster",
+   "quelle": "label-setting-planung/vormessung/out_v8_auswertung.txt (nicht neu gerechnet)"
+  },
+  {
+   "id": "k16_zufall_n50_b40",
+   "bezug": "k = 16",
+   "neu_gerechnet": false,
+   "zusammenfassung": {
+    "typ": "zufall",
+    "n": 50,
+    "breite": 40,
+    "instanzen": 12,
+    "luecke_mittel": 1.191,
+    "luecke_max": 4.293,
+    "luecke_null_in": 0,
+    "labels_median_k1": 103567,
+    "labels_median_k16": 230285
+   },
+   "n": 50,
+   "breite": 40,
+   "typ": "zufall",
+   "quelle": "label-setting-planung/vormessung/out_v8_auswertung.txt (nicht neu gerechnet)"
+  },
+  {
+   "id": "k16_zufall_n50_b100",
+   "bezug": "k = 16",
+   "neu_gerechnet": false,
+   "zusammenfassung": {
+    "typ": "zufall",
+    "n": 50,
+    "breite": 100,
+    "instanzen": 12,
+    "luecke_mittel": 3.227,
+    "luecke_max": 4.811,
+    "luecke_null_in": 0,
+    "labels_median_k1": 397259,
+    "labels_median_k16": 1391550
+   },
+   "n": 50,
+   "breite": 100,
+   "typ": "zufall",
+   "quelle": "label-setting-planung/vormessung/out_v8_auswertung.txt (nicht neu gerechnet)"
+  },
+  {
+   "id": "k16_zufall_n100_b20",
+   "bezug": "k = 16",
+   "neu_gerechnet": false,
+   "zusammenfassung": {
+    "typ": "zufall",
+    "n": 100,
+    "breite": 20,
+    "instanzen": 12,
+    "luecke_mittel": 0.0,
+    "luecke_max": 0.0,
+    "luecke_null_in": 12,
+    "labels_median_k1": 840396,
+    "labels_median_k16": 1683242
+   },
+   "n": 100,
+   "breite": 20,
+   "typ": "zufall",
+   "quelle": "label-setting-planung/vormessung/out_v8_auswertung.txt (nicht neu gerechnet)"
+  },
+  {
+   "id": "k16_zufall_n100_b40",
+   "bezug": "k = 16",
+   "neu_gerechnet": false,
+   "zusammenfassung": {
+    "typ": "zufall",
+    "n": 100,
+    "breite": 40,
+    "instanzen": 12,
+    "luecke_mittel": 0.879,
+    "luecke_max": 1.528,
+    "luecke_null_in": 0,
+    "labels_median_k1": 1663758,
+    "labels_median_k16": 4379908
+   },
+   "n": 100,
+   "breite": 40,
+   "typ": "zufall",
+   "quelle": "label-setting-planung/vormessung/out_v8_auswertung.txt (nicht neu gerechnet)"
+  }
+ ]
+}
