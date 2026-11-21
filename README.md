@@ -160,7 +160,7 @@ Die Suite hat 161 Tests (`pytest --collect-only -q tests`), alles unter `tests/`
 - **Verfahren gegen Kreise außer der elementaren Rechnung** (Gedächtnis über den zuletzt besuchten Kunden hinaus, Kreise bis zu einer Länge verbieten): nicht Gegenstand dieser Demo; hier steht nur der Preis der Kreise.
 - **Partitionierungs-Master und geglättete Dualpreise:** nicht gerechnet (im Test nur: Überdeckung gleich Partitionierung bei metrischen Kosten an kleinen Instanzen).
 - **Lücke zur elementaren Schranke bei Breite 200, bei gruppierten und langen Instanzen und bei mehr als 30 Kunden:** nicht gemessen; die elementare Rechnung ist dort zu aufwendig. Gruppierte und lange Instanzen stehen nur gegen k = 8, gruppierte und zufällige bei n = 50 und 100 nur gegen k = 16.
-- **Bidirektionales Labeling, Eimer-Verfahren, Kantenstreichung:** nicht umgesetzt.
+- **Bidirektionales Labeling, Buckets-Verfahren, Kantenstreichung:** nicht umgesetzt.
 - **Zeit statt Labels als Messgröße:** Sekunden stehen nur zur Information.
 
 ## Lokal ausführen
