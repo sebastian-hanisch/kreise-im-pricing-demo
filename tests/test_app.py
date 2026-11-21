@@ -48,7 +48,7 @@ def test_app_loads_without_exception_and_shows_the_default_verdicts():
     at = _fresh_app()
     texte = [t for _k, t in _verdicts(at)]
     assert any(t.startswith("Mit erlaubten Kreisen hat der beste Weg reduzierte Kosten −18 (Weg 7 → 6 → 7 → 6") for t in texte)
-    assert any(t.startswith("Spaltenerzeugung im Handbeispiel: mit erlaubten Kreisen endet sie nach 8 Runden") for t in texte)
+    assert any(t.startswith("Spaltengenerierung im Handbeispiel: mit erlaubten Kreisen endet sie nach 8 Runden") for t in texte)
     assert any(t.startswith(f"55 von 76 neuen Spalten (72,4{NBSP}%)") for t in texte)
     assert not at.error
 

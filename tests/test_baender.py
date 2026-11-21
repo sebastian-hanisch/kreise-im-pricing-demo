@@ -1,7 +1,7 @@
 """Feste Messreihen (data/*.json): Aufbau, Quellenangaben, Vergleich mit der Messung vor dem Bau und Stichproben, die mit dem Kern dieser Demo nachgerechnet werden.
 
 Die JSON-Dateien hat `tools/baender_erzeugen.py` mit dem Kern dieser Demo gerechnet. Die Stichproben hier rechnen Zellen noch einmal: Schranken müssen auf 1e-6 (relativ) stimmen (der Wert der
-Schranke hängt nicht vom Weg der Spaltenerzeugung ab); Zählungen von Spalten hängen vom Master-Löser ab und werden nur in Bändern geprüft (DEMO-PLAYBOOK §4: Plattformabhängiges nie exakt)."""
+Schranke hängt nicht vom Weg der Spaltengenerierung ab); Zählungen von Spalten hängen vom Master-Löser ab und werden nur in Bändern geprüft (DEMO-PLAYBOOK §4: Plattformabhängiges nie exakt)."""
 
 import pytest
 

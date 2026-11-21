@@ -164,11 +164,11 @@ def ueberlebende_tabelle(tabelle: list) -> list:
 
 
 # ---------------------------------------------------------------------------------------------------------------------------------
-# Handbeispiel, Experiment 2: Spaltenerzeugung Runde für Runde
+# Handbeispiel, Experiment 2: Spaltengenerierung Runde für Runde
 # ---------------------------------------------------------------------------------------------------------------------------------
 
 def hand_spaltenerzeugung(elementar: bool) -> dict:
-    """Spaltenerzeugung am Handbeispiel, exakt mit Brüchen, je Runde die beste neue Spalte (Gleichstand: kleinere Besuchsfolge).
+    """Spaltengenerierung am Handbeispiel, exakt mit Brüchen, je Runde die beste neue Spalte (Gleichstand: kleinere Besuchsfolge).
 
     Rückgabe: lauf (Ergebnis von `spaltenerzeugung`), neue (die neu aufgenommenen Routen), mit_kreis (wie viele davon), ende (Spalten mit positiver Menge), schranke, labels, runden (Zahl)."""
     inst = S.handbeispiel()
@@ -179,7 +179,7 @@ def hand_spaltenerzeugung(elementar: bool) -> dict:
 
 
 def hand_gegenprobe(elementar: bool) -> dict:
-    """Gegenprobe zur Spaltenerzeugung: alle zulässigen Routen als Spalten, ein Master (exakt) darüber. Rückgabe {"wert": ..., "spalten": Zahl}."""
+    """Gegenprobe zur Spaltengenerierung: alle zulässigen Routen als Spalten, ein Master (exakt) darüber. Rückgabe {"wert": ..., "spalten": Zahl}."""
     inst = S.handbeispiel()
     routen = A.alle_routen(inst, elementar, 0)
     wert, _dual, _x = M.master_exakt(inst.n, [A.weg_laenge(inst, r) for r in routen], routen)
@@ -209,7 +209,7 @@ def kreis_kennzahlen(spalten: list) -> dict:
 
 
 def live_lauf(n: int, breite: int, seed: int) -> dict:
-    """Ganze Spaltenerzeugung auf einer zufälligen Instanz: einmal mit erlaubten Kreisen (k = 1), einmal elementar (mit Obergrenze in Dominanztests).
+    """Ganze Spaltengenerierung auf einer zufälligen Instanz: einmal mit erlaubten Kreisen (k = 1), einmal elementar (mit Obergrenze in Dominanztests).
 
     Jede neue Spalte der Rechnung mit Kreisen wird vor der Anzeige unabhängig geprüft (`pruefe_route`); die Schranke bei k = 1 darf nie über der elementaren liegen.
     Rückgabe: Kennzahlen beider Läufe, Kreis-Kennzahlen der neuen Spalten, Lücke (None, wenn die elementare Rechnung abbrach), `fehler` (None, wenn alle Prüfungen bestanden) und die Rechenzeit (nur zur Information)."""
@@ -271,12 +271,12 @@ def verdict_kreis_hand(z1: dict, ze: dict, kunde7, dual7) -> tuple:
 
 
 def verdict_colgen_hand(k1: dict, el: dict, gegenprobe_k1: dict, gegenprobe_el: dict) -> tuple:
-    """Verdikt zu Experiment 2: Schranke der Spaltenerzeugung mit Kreisen gegen die elementare, Lücke, Zahl der Spalten mit Kreis.
+    """Verdikt zu Experiment 2: Schranke der Spaltengenerierung mit Kreisen gegen die elementare, Lücke, Zahl der Spalten mit Kreis.
 
     `k1`, `el`: Ergebnisse von `hand_spaltenerzeugung`; `gegenprobe_*`: Ergebnisse von `hand_gegenprobe` (Master über alle zulässigen Routen)."""
     lk = luecke(el["schranke"], k1["schranke"])
     gleich = gegenprobe_k1["wert"] == k1["schranke"] and gegenprobe_el["wert"] == el["schranke"]
-    text = (f"Spaltenerzeugung im Handbeispiel: mit erlaubten Kreisen endet sie nach {k1['runden']} Runden bei der Schranke {fmt_wert(k1['schranke'])}, elementar nach {el['runden']} Runden bei {fmt_wert(el['schranke'])}. "
+    text = (f"Spaltengenerierung im Handbeispiel: mit erlaubten Kreisen endet sie nach {k1['runden']} Runden bei der Schranke {fmt_wert(k1['schranke'])}, elementar nach {el['runden']} Runden bei {fmt_wert(el['schranke'])}. "
             f"{k1['mit_kreis']} von {len(k1['neue'])} neuen Spalten enthalten einen Kreis. Labels insgesamt: {fmt_int(k1['labels'])} mit erlaubten Kreisen, {fmt_int(el['labels'])} elementar. "
             f"Gegenprobe (ein Master über alle {gegenprobe_k1['spalten']} bzw. {gegenprobe_el['spalten']} zulässigen Routen): {'gleiche Schranken' if gleich else 'ABWEICHUNG'}.")
     if lk is None or lk == 0:

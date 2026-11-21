@@ -1,6 +1,6 @@
 """Konstanten: Regler-Grenzen, feste Annahmen, Farben und Presets.
 
-Rechenaufwand am Regler-Maximum (DEMO-PLAYBOOK 1c): Die Live-Rechnung (Experiment 3) führt die ganze Spaltenerzeugung aus, einmal mit Kreisen
+Rechenaufwand am Regler-Maximum (DEMO-PLAYBOOK 1c): Die Live-Rechnung (Experiment 3) führt die ganze Spaltengenerierung aus, einmal mit Kreisen
 (Gedächtnis k = 1, wenige Labels) und einmal elementar (jeder Kunde höchstens einmal, viele Labels). Die elementare Rechnung wächst am schnellsten:
 bei n = 20 und Fensterbreite 200 erzeugt sie die meisten Labels. Deshalb ist sie auf LIVE_MAX_VERGLEICHE_ELEMENTAR Dominanztests in allen Pricing-Aufrufen
 zusammen begrenzt (feste Zahl statt Zeitgrenze, damit der Abbruch reproduzierbar ist); bei Abbruch zeigt die App „elementar nicht erreicht“ statt einer Zahl.
@@ -67,6 +67,6 @@ PRESET_HELP = {
     "Kreis über Kunde 7 lohnt sich nicht": "Handbeispiel mit Dualpreis 2 für Kunde 7: ein Kreis über Kunde 7 lohnt sich gegenüber dem besten elementaren Weg nicht mehr; ein anderer Kreis (über Kunde 5) hat trotzdem die kleinsten reduzierten Kosten. Live-Rechnung wie im Grundfall.",
     "Enge Fenster (Breite 20)": "Live-Rechnung mit 20 Kunden und Fensterbreite 20: in diesem Beispiel (eine Instanz) enthält keine neue Spalte einen Kreis, und die Schranke ist gleich der elementaren.",
     "Breite 40: Kreise ohne Lücke": "Live-Rechnung mit 20 Kunden und Fensterbreite 40: in diesem Beispiel (eine Instanz) enthalten Spalten einen Kreis, und die Schranke liegt trotzdem nicht unter der elementaren.",
-    "Weite Fenster (Breite 200)": "Live-Rechnung mit 12 Kunden und Fensterbreite 200, im Handbeispiel die letzte Runde der Spaltenerzeugung: in diesem Beispiel (eine Instanz) enthalten die meisten neuen Spalten einen Kreis.",
+    "Weite Fenster (Breite 200)": "Live-Rechnung mit 12 Kunden und Fensterbreite 200, im Handbeispiel die letzte Runde der Spaltengenerierung: in diesem Beispiel (eine Instanz) enthalten die meisten neuen Spalten einen Kreis.",
     "Größte Einstellung (n = 20, Breite 200)": "Größte Einstellung der Live-Rechnung: 20 Kunden, Fensterbreite 200. Die elementare Rechnung bricht in diesem Beispiel an der Obergrenze ab, es gibt keine Lücke; rechnet einige Sekunden.",
 }

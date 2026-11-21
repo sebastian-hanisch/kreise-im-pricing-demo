@@ -39,7 +39,7 @@ def build_labels_hand(z1: dict, ze: dict):
 
 
 def build_master_verlauf(werte_k1: list, werte_el: list):
-    """Wert des Masters je Runde der Spaltenerzeugung im Handbeispiel (Linie je Regel); die Werte sind exakt gerechnet und hier als Gleitkommazahlen gezeichnet."""
+    """Wert des Masters je Runde der Spaltengenerierung im Handbeispiel (Linie je Regel); die Werte sind exakt gerechnet und hier als Gleitkommazahlen gezeichnet."""
     fig = go.Figure()
     fig.add_trace(go.Scatter(x=[f"Runde {i}" for i in range(1, len(werte_k1) + 1)], y=[float(w) for w in werte_k1], mode="lines+markers", name=REGEL_KREISE,
                              line=dict(color=C.COLOR_LINE2, width=3), hovertemplate="%{x}: %{y:.2f}<extra>" + REGEL_KREISE + "</extra>"))
@@ -51,7 +51,7 @@ def build_master_verlauf(werte_k1: list, werte_el: list):
 
 
 def build_live_labels(z: dict):
-    """Erzeugte Labels der ganzen Spaltenerzeugung (alle Pricing-Aufrufe zusammen) mit erlaubten Kreisen und elementar; bei Abbruch der elementaren Rechnung nur bis zur Obergrenze."""
+    """Erzeugte Labels der ganzen Spaltengenerierung (alle Pricing-Aufrufe zusammen) mit erlaubten Kreisen und elementar; bei Abbruch der elementaren Rechnung nur bis zur Obergrenze."""
     k1, el = z["k1"], z["elem"]
     xs = [REGEL_KREISE, REGEL_ELEMENTAR + (" (abgebrochen)" if el["abgebrochen"] else "")]
     ys = [k1["labels"], el["labels"]]

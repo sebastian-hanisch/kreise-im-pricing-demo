@@ -53,7 +53,7 @@ def test_best_reduced_cost_with_cycles_is_never_above_the_elementary_one():
 
 
 def test_no_route_repeats_a_customer_directly_and_every_route_is_feasible():
-    """Jede Route des Pricings und jede neue Spalte der Spaltenerzeugung hält Fenster, Last, Horizont und die Regel „nicht i direkt nach i“ ein; elementar kommt kein Kunde doppelt vor."""
+    """Jede Route des Pricings und jede neue Spalte der Spaltengenerierung hält Fenster, Last, Horizont und die Regel „nicht i direkt nach i“ ein; elementar kommt kein Kunde doppelt vor."""
     for seed in range(20):
         inst = _zufall(8 + seed % 4, seed, (40, 100, 200)[seed % 3])
         dual = S.dualpreise_erste_runde(inst)

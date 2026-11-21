@@ -1,6 +1,6 @@
 """Kern gegen Handrechnung und Gegenproben, die nichts aus dem Kern-Modul benutzen (DEMO-PLAYBOOK §1b und §12).
 
-Jede Regel des Kerns (Erweiterung, Dominanz, Einfügen, Rückverfolgung, Pricing, Master, Spaltenerzeugung) wird an der Mini-Instanz (dem Handbeispiel, siehe conftest.py) gegen Handrechnung geprüft;
+Jede Regel des Kerns (Erweiterung, Dominanz, Einfügen, Rückverfolgung, Pricing, Master, Spaltengenerierung) wird an der Mini-Instanz (dem Handbeispiel, siehe conftest.py) gegen Handrechnung geprüft;
 die Zahlen des Handbeispiels stehen als Rechnung da, wo es eine gibt."""
 
 from concurrent.futures import ThreadPoolExecutor
@@ -166,7 +166,7 @@ def test_cycle_helpers():
     assert A.kuerzester_kreis((7, 6, 7, 6)) == 2 and A.kuerzester_kreis((5, 3, 1, 5)) == 3 and A.kuerzester_kreis((1, 2, 3, 4, 1)) == 4 and A.kuerzester_kreis((1, 2, 3)) is None
 
 
-# --- Master und Spaltenerzeugung ---------------------------------------------------------------------------------------------------------
+# --- Master und Spaltengenerierung ---------------------------------------------------------------------------------------------------------
 
 def test_exact_master_on_the_single_trips_gives_the_first_round_duals(hand):
     spalten = [(j,) for j in range(1, 8)]

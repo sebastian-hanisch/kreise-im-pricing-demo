@@ -5,7 +5,7 @@ Definition an der Wegfolge, nicht über die Bitmasken des Kerns. Es benutzt wede
 Der Master des Orakels ist ein eigener LP-Aufruf (scipy, auf den aufgezählten Routen), nicht `master_lp` oder `master_exakt` des Kerns.
 
 Geprüft werden (1) der beste Wert (und die Zulässigkeit des gefundenen Weges) für Gedächtnis 1, 3 und elementar, (2) bei Gedächtnis 1 die Menge der überlebenden Labels je Kunde
-gegen die Pareto-Front aller Weg-Labels, (3) die Schranke der Spaltenerzeugung gegen einen Master über alle aufgezählten Routen und (4) die 180 Fälle der Vorabmessung
+gegen die Pareto-Front aller Weg-Labels, (3) die Schranke der Spaltengenerierung gegen einen Master über alle aufgezählten Routen und (4) die 180 Fälle der Vorabmessung
 (60 Zufallsinstanzen mit 7 Kunden, drei Breiten, zufällige Dualpreise): Labeling elementar gegen Tiefensuche, und wie oft k = 1 echt unter dem elementaren Optimum liegt.
 Zählungen des Kerns (erzeugte Labels) hängen von der Reihenfolge der Warteschlange ab und haben kein Orakel außer dem Handbeispiel. Ganzzahlige Gitterinstanzen (Gleichstände exakt,
 Kunden am selben Ort kommen vor), feste Zufalls-Seeds, unter 10 s."""
@@ -136,7 +136,7 @@ def test_orakel_rule_follows_the_definition():
 
 
 def test_column_generation_bound_equals_a_master_over_all_enumerated_routes():
-    """Die Schranke der Spaltenerzeugung (Kern: HiGHS-Master plus Pricing) gegen einen Master über alle aufgezählten Routen (Orakel: eigene Aufzählung und eigener LP-Aufruf)."""
+    """Die Schranke der Spaltengenerierung (Kern: HiGHS-Master plus Pricing) gegen einen Master über alle aufgezählten Routen (Orakel: eigene Aufzählung und eigener LP-Aufruf)."""
     zaehler = 0
     for seed in range(25):
         inst, _dual = gitter_instanz(seed)
@@ -150,7 +150,7 @@ def test_column_generation_bound_equals_a_master_over_all_enumerated_routes():
 
 
 def test_exact_master_and_pricing_agree_with_the_orakel_on_the_hand_example(hand):
-    """Spaltenerzeugung exakt (Brüche) gegen den eigenen Master über alle aufgezählten Routen: 83/3 mit Kreisen, 30 elementar."""
+    """Spaltengenerierung exakt (Brüche) gegen den eigenen Master über alle aufgezählten Routen: 83/3 mit Kreisen, 30 elementar."""
     for k, soll in ((1, 83 / 3), (7, 30.0)):
         _w, _r, _v, routen = orakel(hand, (0,) * 8, k)
         assert master_ueber_alle_routen(hand, routen) == pytest.approx(soll, rel=1e-9)

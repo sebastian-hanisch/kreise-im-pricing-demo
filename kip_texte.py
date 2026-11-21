@@ -34,7 +34,7 @@ def assumptions_markdown() -> str:
 - Die Diagramme haben keine Auswahlfunktion; ein Mausklick auf sie bewirkt nichts."""
 
 
-MATH_LESEHILFE = r"""**Lesehilfe.** *Gegeben:* ein Depot und $n$ Kunden mit Entfernungen (gleich Fahrzeiten), Zeitfenstern, Lasten und Dualpreisen. *Gesucht:* die Route mit den kleinsten reduzierten Kosten, wenn ein Kunde mehrfach vorkommen darf (nur derselbe Kunde direkt nacheinander ist verboten), und die untere Schranke, bei der die Spaltenerzeugung dann endet, im Vergleich zur elementaren Schranke.
+MATH_LESEHILFE = r"""**Lesehilfe.** *Gegeben:* ein Depot und $n$ Kunden mit Entfernungen (gleich Fahrzeiten), Zeitfenstern, Lasten und Dualpreisen. *Gesucht:* die Route mit den kleinsten reduzierten Kosten, wenn ein Kunde mehrfach vorkommen darf (nur derselbe Kunde direkt nacheinander ist verboten), und die untere Schranke, bei der die Spaltengenerierung dann endet, im Vergleich zur elementaren Schranke.
 
 | Symbol | Bedeutung |
 |---|---|
@@ -49,7 +49,7 @@ MATH_LESEHILFE = r"""**Lesehilfe.** *Gegeben:* ein Depot und $n$ Kunden mit Entf
 | $c_r$ | Kosten der Route (Weglänge Depot, Route, Depot) |
 | $\bar c_r$ | reduzierte Kosten der Route |
 | $N_j$ | Gedächtnis-Nachbarschaft des Kunden $j$ (bei $k = 1$ nur $j$ selbst, bei $k = n$ alle Kunden) |
-| $z_k$ | Schranke der Spaltenerzeugung bei Gedächtnis $k$ |
+| $z_k$ | Schranke der Spaltengenerierung bei Gedächtnis $k$ |
 """
 
 MATH_FORMELN = r"""**Reduzierte Kosten.** Jeder Besuch bringt seinen Dualpreis ein, auch ein wiederholter Besuch desselben Kunden:

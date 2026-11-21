@@ -85,8 +85,8 @@ with st.container(key="kopf"):
     st.title("🔁 Kreise im Pricing: wie oft, und was kosten sie?")
 st.markdown(
     """
-Im **Pricing** der Spaltenerzeugung (zum Beispiel bei der Tourenplanung) sucht das **Label-Setting** die günstigste Route zu den **Dualpreisen**, die der Master je Kunde vorgibt. Eine Route heißt **elementar**, wenn jeder Kunde höchstens einmal vorkommt;
-das zu erzwingen ist aufwendig. Eine Möglichkeit ist deshalb, **Kreise** zuzulassen: ein Kunde darf mehrfach vorkommen, nur „Kunde i direkt nach Kunde i“ ist verboten. In den Messreihen mit Zufallsinstanzen braucht das weniger Labels (im kleinen Handbeispiel nicht), aber die **untere Schranke** der Spaltenerzeugung liegt tiefer als die elementare oder gleich hoch.
+Im **Pricing** der Spaltengenerierung (zum Beispiel bei der Tourenplanung) sucht das **Label-Setting** die günstigste Route zu den **Dualpreisen**, die der Master je Kunde vorgibt. Eine Route heißt **elementar**, wenn jeder Kunde höchstens einmal vorkommt;
+das zu erzwingen ist aufwendig. Eine Möglichkeit ist deshalb, **Kreise** zuzulassen: ein Kunde darf mehrfach vorkommen, nur „Kunde i direkt nach Kunde i“ ist verboten. In den Messreihen mit Zufallsinstanzen braucht das weniger Labels (im kleinen Handbeispiel nicht), aber die **untere Schranke** der Spaltengenerierung liegt tiefer als die elementare oder gleich hoch.
 Diese Demo fragt: **Wie oft enthalten neue Spalten einen Kreis, und wie viel tiefer liegt die Schranke?** Gemessen werden die **erzeugten Labels**, der **Anteil der Spalten mit Kreis** und die **Lücke** der Schranke zur elementaren; Sekunden stehen nur zur Information da.
 
 Weiter unten: fünf Abschnitte **🔬 Experiment**, dann **🚧 Wo die Annahmen enden** und die Expander **⚠️ Annahmen, Grenzen und bekannte Probleme** und **📐 Mathematische Formulierung**.
@@ -121,9 +121,9 @@ with st.sidebar:
     h_dual7 = st.slider("Dualpreis von Kunde 7 (Experiment 1)", *bounds("h_dual7"), key="h_dual7",
                         help="Preis, den der Master für den Besuch von Kunde 7 vorgibt. Voreinstellung 10 (Hin- und Rückweg zum Depot); die anderen Dualpreise sind fest.")
     h_runde = st.slider("Runde ansehen (Experiment 2)", *bounds("h_runde"), key="h_runde",
-                        help="Welche Runde der Spaltenerzeugung mit Kreisen im Handbeispiel im Detail gezeigt wird: Dualpreise der Runde und Fahrplan der neuen Spalte.")
+                        help="Welche Runde der Spaltengenerierung mit Kreisen im Handbeispiel im Detail gezeigt wird: Dualpreise der Runde und Fahrplan der neuen Spalte.")
     st.header("🔧 Live-Rechnung")
-    st.caption("Für die Experimente 3 und 4: die ganze Spaltenerzeugung auf einer zufälligen Instanz.")
+    st.caption("Für die Experimente 3 und 4: die ganze Spaltengenerierung auf einer zufälligen Instanz.")
     l_n = st.slider("Kunden n", *bounds("l_n"), key="l_n", help="Zahl der Kunden der zufälligen Instanz (Quadrat 100 × 100, Depot in der Mitte).")
     l_breite = st.select_slider("Breite der Zeitfenster", options=choices("l_breite"), key="l_breite",
                                 help="Je breiter die Fenster, desto mehr Wege sind zulässig, desto häufiger passt ein zweiter Besuch am selben Kunden in den Zeitplan.")
@@ -195,10 +195,10 @@ getattr(st, kind)(text)
 st.markdown("---")
 
 # ======================================================================================================================================
-# Experiment 2: Spaltenerzeugung ohne Elementarität
+# Experiment 2: Spaltengenerierung ohne Elementarität
 # ======================================================================================================================================
 
-st.subheader("🔬 Experiment 2: Spaltenerzeugung mit Kreisen – Runde für Runde am Handbeispiel")
+st.subheader("🔬 Experiment 2: Spaltengenerierung mit Kreisen – Runde für Runde am Handbeispiel")
 st.markdown(
     """
 Dasselbe Netz, jetzt die ganze Schleife aus Master und Pricing: Start mit den sieben Einzelfahrten, je Runde kommt die beste neue Spalte dazu, bis keine Route mehr negative reduzierte Kosten hat. Der Master ist exakt mit Brüchen gerechnet.
@@ -268,14 +268,14 @@ st.markdown("---")
 # Experiment 3: Größe und Breite (live)
 # ======================================================================================================================================
 
-st.subheader("🔬 Experiment 3: Größe und Breite – die ganze Spaltenerzeugung auf einer Zufallsinstanz, live")
+st.subheader("🔬 Experiment 3: Größe und Breite – die ganze Spaltengenerierung auf einer Zufallsinstanz, live")
 st.markdown(
     f"""
-Eine zufällige Instanz mit **{l_n} Kunden** (Zufalls-Seed {l_seed}), Zeitfenster der Breite {l_breite}. Die Spaltenerzeugung läuft zweimal: mit erlaubten Kreisen und elementar (Überdeckungs-Master, je Runde bis zu {C.MAX_NEUE_SPALTEN} neue Spalten).
+Eine zufällige Instanz mit **{l_n} Kunden** (Zufalls-Seed {l_seed}), Zeitfenster der Breite {l_breite}. Die Spaltengenerierung läuft zweimal: mit erlaubten Kreisen und elementar (Überdeckungs-Master, je Runde bis zu {C.MAX_NEUE_SPALTEN} neue Spalten).
 Die elementare Rechnung bricht bei sehr großen Einstellungen an einer festen Obergrenze ab ({E.fmt_int(C.LIVE_MAX_VERGLEICHE_ELEMENTAR)} Dominanztests); die Obergrenze zählt Dominanztests, keine Sekunden. Jede neue Spalte wird vor der Anzeige unabhängig geprüft.
 """
 )
-with st.spinner("Spaltenerzeugung wird gerechnet (die größten Einstellungen brauchen einige Sekunden) …"):
+with st.spinner("Spaltengenerierung wird gerechnet (die größten Einstellungen brauchen einige Sekunden) …"):
     live = _live(int(l_n), int(l_breite), int(l_seed))
 if live["fehler"]:
     st.error("Prüfung fehlgeschlagen: " + live["fehler"])

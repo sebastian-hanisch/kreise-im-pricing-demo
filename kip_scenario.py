@@ -60,7 +60,7 @@ def make_instance(n: int, seed: int, breite: float, gruppiert: bool = False, hor
 
 
 def dualpreise_erste_runde(inst: Instanz) -> tuple:
-    """Dualpreise der ersten Spaltenerzeugungsrunde: Startspalten sind die Einzelkunden-Fahrten Depot-i-Depot, ihre Kosten 2 d(0, i) sind die Preise."""
+    """Dualpreise der ersten Spaltengenerierungsrunde: Startspalten sind die Einzelkunden-Fahrten Depot-i-Depot, ihre Kosten 2 d(0, i) sind die Preise."""
     return (0,) + tuple(2 * inst.dist[0][i] for i in range(1, inst.n + 1))
 
 

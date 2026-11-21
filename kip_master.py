@@ -1,4 +1,4 @@
-"""Master und Spaltenerzeugung: der Überdeckungs-Master (jeder Kunde mindestens einmal überdeckt) und die Schleife aus Master und Pricing.
+"""Master und Spaltengenerierung: der Überdeckungs-Master (jeder Kunde mindestens einmal überdeckt) und die Schleife aus Master und Pricing.
 
 Eine Spalte ist eine Route (Besuchsfolge); sie kostet ihre Weglänge. Besucht sie einen Kunden zweimal, zählt sie ihn im Master zweimal (Kreis-Spalten).
 Zwei Master-Löser mit derselben Aufgabe:
@@ -7,7 +7,7 @@ Zwei Master-Löser mit derselben Aufgabe:
 * `master_exakt`  Simplex mit Brüchen (Regel von Bland), liefert Dualpreise und Mengen exakt; für das Handbeispiel (ganzzahlige Kosten).
 
 `spaltenerzeugung` ruft abwechselnd einen Master-Löser und das Pricing (`kip_algorithm.price`) auf, bis keine Route mit negativen reduzierten Kosten mehr kommt;
-der Wert des letzten Masters ist dann die untere Schranke (Schranke der Spaltenerzeugung) des Gedächtnisses k."""
+der Wert des letzten Masters ist dann die untere Schranke (Schranke der Spaltengenerierung) des Gedächtnisses k."""
 
 from fractions import Fraction
 
@@ -78,7 +78,7 @@ def master_exakt(n: int, kosten: list, spalten: list):
 
 
 def spaltenerzeugung(inst, k: int, exakt: bool = False, max_neu: int = MAX_NEUE_SPALTEN, max_labels=None, max_vergleiche=None, max_runden: int = 400) -> dict:
-    """Spaltenerzeugung mit Gedächtnis k: Start mit den Einzelfahrten Depot-i-Depot, je Runde Master und Pricing.
+    """Spaltengenerierung mit Gedächtnis k: Start mit den Einzelfahrten Depot-i-Depot, je Runde Master und Pricing.
 
     Je Runde werden bis zu `max_neu` neue Routen (die besten nach reduzierten Kosten, noch nicht im Master, mit reduzierten Kosten unter der Schwelle) als Spalten aufgenommen.
     `exakt`: Master mit Brüchen und Pricing ohne Toleranz (ganzzahlige Instanzen); sonst HiGHS und Gleitkomma. `max_labels`, `max_vergleiche`: Obergrenzen für die erzeugten Labels
@@ -123,7 +123,7 @@ def spaltenerzeugung(inst, k: int, exakt: bool = False, max_neu: int = MAX_NEUE_
 
 
 def neue_spalten(lauf: dict, n: int) -> list:
-    """Die in der Spaltenerzeugung neu aufgenommenen Routen (ohne die n Einzelfahrten) in der Reihenfolge der Aufnahme."""
+    """Die in der Spaltengenerierung neu aufgenommenen Routen (ohne die n Einzelfahrten) in der Reihenfolge der Aufnahme."""
     return lauf["spalten"][n:]
 
 
